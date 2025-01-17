@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Innovative Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero"
+        style="background: url('hero.jpeg') no-repeat center center; background-size: cover;">
+        <div class="intro">
+            <h1>Welcome to My Portfolio</h1>
+            <p>I'm a passionate web developer, and this is my creative space!</p>
+            <button onclick="scrollToSection('about')">Learn More About Me</button>
+        </div>
+    </section>
+
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="Shruti_Photo.jpg" alt="Shruti" class="about-img" onclick="openModal();">
+            <div class="about-info">
+                <p>Hello! I'm Shruti, a dedicated and reliable Computer Science and Engineering student, driven by a
+                    strong desire to contribute effectively to team success. My peers often praise me for my diligent
+                    work ethic and my ability to help the team stay on track and meet goals. I am a hardworking,
+                    self-motivated individual who thrives in fast-paced environments, eager to apply my knowledge and
+                    skills to real-world challenges.</p>
+                <p>I quickly adapt to new processes and technologies, always focusing on delivering quality results.
+                    With a commitment to continuous improvement and a strong sense of responsibility, I’m looking
+                    forward to further developing my skills and contributing to innovative projects in software
+                    development.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <section id="education" class="education">
+        <h2>My Education</h2>
+        <div class="education-list">
+            <div class="education-item">
+                <h3>Secondary School</h3>
+                <p><strong>Year:</strong> 2019 - 2020</p>
+                <p><strong>School:</strong> Apeejay School, Kharghar</p>
+                <p><strong>Board:</strong> CBSE</p>
+                <p><strong>Percentage:</strong> 88.20%</p>
+            </div>
+            <div class="education-item">
+                <h3>Higher Secondary School</h3>
+                <p><strong>Year:</strong> 2021 - 2022</p>
+                <p><strong>School:</strong> Apeejay School, Kharghar</p>
+                <p><strong>Board:</strong> CBSE</p>
+                <p><strong>Percentage:</strong> 75%</p>
+            </div>
+            <div class="education-item">
+                <h3>B.Tech in Computer Science</h3>
+                <p><strong>Year:</strong> 2022 - 2026</p>
+                <p><strong>University:</strong> KIIT University</p>
+                <p><strong>CGPA:</strong> 8.02</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>My Skills</h2>
+        <div class="skill-list">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JS</div>
+            <div class="skill">Python</div>
+            <div class="skill">Java</div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/shruti.sinha02?igsh=MTFuam9ueHp4MXNhaA==" target="_blank"
+                class="social-icon" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/shruti-sinha-834359268/" target="_blank" class="social-icon"
+                aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+
+        <div class="contact-info">
+            <p><strong>Email:</strong> <a href="mailto:sinha.shruti0211@gmail.com">sinha.shruti0211@gmail.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+91 8976253880">+91 8976253880</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Shruti Sinha. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
